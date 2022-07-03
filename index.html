@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/node_modules/video.js/dist/video-js.css" rel="stylesheet">
+<style>
+    .heading{
+        text-decoration: underline;
+        color: brown;
+    }
+  button {
+    margin: 1em;
+    width: 10em;
+  }
+  .autoadvance-group {
+    margin: 1em;
+  }
+  .autoadvance-group label {
+    margin: 10px;
+  }
+</style>
+    <title>EpicPlayer</title>
+</head>
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://vjs.zencdn.net/5.16.0/video-js.min.css" rel="stylesheet"/>
+    <center>
+
+    <h1 class="heading">EPIC VIDEO PLAYER</h1>
+    <video class="video-js vjs-default-skin" controls width="840px" height="400px"></video>
+    <button class="previous">Previous</button>
+    <button class="next">Next</button>
+    <button class="jump">Play Third(Ist 2nd Ist)</button>
+    <div class="autoadvance-group">
+      <h4>Auto-advance (in seconds)</h4>
+      <label><input type="radio" name="autoadvance" value="null" checked> No auto-advance</label>
+      <label><input type="radio" name="autoadvance" value="0"> 0</label>
+      <label><input type="radio" name="autoadvance" value="5"> 5</label>
+      <label><input type="radio" name="autoadvance" value="10"> 10</label>
+      <label><input type="radio" name="autoadvance" value="30"> 30</label>
+    </div>
+</center>
+    <script src="https://vjs.zencdn.net/5.16.0/video.min.js"></script>
+    <script src="https://rawgit.com/atlance01/vrapp-ionic/master/www/js/lib/videojs-playlist.js"></script>
+    <script src="index.js"></script>
+   
+</body>
+</html>
+
